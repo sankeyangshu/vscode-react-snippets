@@ -22,9 +22,7 @@
     "typescript",
     "react",
     "javascriptreact",
-    "typescriptreact",
-    "redux",
-    "react-native"
+    "typescriptreact"
   ],
   "categories": [
     "Snippets"
@@ -40,6 +38,36 @@
   "activationEvents": [
     "onStartupFinished"
   ],
+  "contributes": {
+    "configuration": {
+      "title": "React Vscode Extension Snippets",
+      "properties": {
+        "reactSnippets.settings.languageScopes": {
+          "type": "string",
+          "markdownDescription": "defines the language scopes for which the snippets will be available.\nUse comma separated values.\nFor example: `typescript,typescriptreact,javascript,javascriptreact`",
+          "default": "typescript,typescriptreact,javascript,javascriptreact"
+        }
+      }
+    },
+    "snippets": [
+      {
+        "language": "javascript",
+        "path": "./dist/snippets/react-snippets.json"
+      },
+      {
+        "language": "javascriptreact",
+        "path": "./dist/snippets/react-snippets.json"
+      },
+      {
+        "language": "typescript",
+        "path": "./dist/snippets/react-snippets.json"
+      },
+      {
+        "language": "typescriptreact",
+        "path": "./dist/snippets/react-snippets.json"
+      }
+    ]
+  },
   "scripts": {
     "build": "tsup src/index.ts --external vscode",
     "dev": "pnpm run build --watch",
