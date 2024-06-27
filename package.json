@@ -2,7 +2,7 @@
   "name": "vscode-react-collection-snippets",
   "displayName": "React Collection Vscode Snippets",
   "description": "A React Code Snippets Extension",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "publisher": "sankeyangshu",
   "private": true,
   "author": "sankeyangshu",
@@ -46,6 +46,11 @@
           "type": "string",
           "markdownDescription": "defines the language scopes for which the snippets will be available.\nUse comma separated values.\nFor example: `typescript,typescriptreact,javascript,javascriptreact`",
           "default": "typescript,typescriptreact,javascript,javascriptreact"
+        },
+        "reactSnippets.settings.importReactOnTop": {
+          "type": "boolean",
+          "markdownDescription": "Controls if snippets should add `import React from 'react';` at the top of components.\nUse if you have React +17 and use jsx transform.",
+          "default": false
         }
       }
     },

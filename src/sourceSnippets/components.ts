@@ -8,7 +8,7 @@ import {
   reactPropTypes,
   reactPureComponent,
   reactWithMemo,
-} from './bast';
+} from './base';
 
 /**
  * react component 代码片段

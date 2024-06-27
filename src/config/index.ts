@@ -19,6 +19,11 @@ export interface ExtensionSettings {
    */
   languageScopes: string;
 
+  /**
+   * 是否顶部导入 React
+   */
+  importReactOnTop: boolean;
+
   // TODO： css modules支持
   // cssModules: boolean;
 }
