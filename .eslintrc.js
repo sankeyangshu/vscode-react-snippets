@@ -1,20 +1,26 @@
 module.exports = {
+  root: true,
+
   env: {
     browser: true,
     es2021: true,
     node: true,
   },
+
   extends: [
     'plugin:@typescript-eslint/recommended',
     'plugin:prettier/recommended', // 添加 prettier 插件
   ],
-  overrides: [],
+
+  parser: '@typescript-eslint/parser',
+
   parserOptions: {
     ecmaVersion: 'latest',
-    parser: '@typescript-eslint/parser',
     sourceType: 'module',
   },
+
   plugins: ['@typescript-eslint', 'import', 'simple-import-sort'],
+
   rules: {
     '@typescript-eslint/ban-types': 'off',
     '@typescript-eslint/no-explicit-any': 'off',
