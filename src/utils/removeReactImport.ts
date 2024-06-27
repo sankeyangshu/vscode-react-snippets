@@ -1,9 +1,9 @@
-import { snippetAllType } from './gernerateSnippets';
+import { snippetAllType } from './generateSnippets';
 
 /**
  * 携带 react import的代码片段
  */
-const snippetRrefixesWithReactImport = [
+const snippetPrefixesWithReactImport = [
   'rafc',
   'rafcp',
   'rafce',
@@ -31,7 +31,7 @@ export const removeReactImport = ({
   body: string[];
   prefix: snippetAllType['prefix'];
 }) => {
-  if (!snippetRrefixesWithReactImport.includes(prefix)) {
+  if (!snippetPrefixesWithReactImport.includes(prefix)) {
     return body;
   }
 

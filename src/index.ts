@@ -1,5 +1,5 @@
 import { commands, ConfigurationChangeEvent, window, workspace } from 'vscode';
-import { generateSnippets } from './utils/gernerateSnippets';
+import { generateSnippets } from './utils/generateSnippets';
 import { EXTENSION_NAME } from './config';
 
 /**

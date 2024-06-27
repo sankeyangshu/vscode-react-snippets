@@ -1,6 +1,6 @@
 import { extensionConfig } from '../config';
 import { Placeholders, SnippetPlaceholders } from '../types';
-import { snippetAllType } from './gernerateSnippets';
+import { snippetAllType } from './generateSnippets';
 import { removeReactImport } from './removeReactImport';
 
 /**
