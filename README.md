@@ -8,6 +8,20 @@
 
 # vscode-react-snippets
 
+:star: :star: :star: :star: :star:
+
+### 迁移提示
+
+本插件功能已迁移至 **vscode-javascript-snippets** 继续维护
+
+新插件集成了多种框架代码片段提示
+
+请移步至新仓库：[vscode-javascript-snippets](https://github.com/sankeyangshu/vscode-javascript-snippets)
+
+### ---------------------------------------------
+
+### 下面是旧版介绍
+
 ## Installation
 
 In order to install an extension you need to launch the Command Palette.
